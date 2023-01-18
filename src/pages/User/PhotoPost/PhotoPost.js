@@ -7,6 +7,7 @@ import useFetch from "../../../hooks/useFetch";
 import { PHOTO_POST } from "../../../api";
 import Error from "../../../components/Error";
 import { useNavigate } from "react-router-dom";
+import Head from "../../../components/Head";
 
 const PhotoPost = () => {
   const nome = useForm();
@@ -42,6 +43,10 @@ const PhotoPost = () => {
 
   return (
     <section className={`${styles.photoPost} animeLeft`}>
+      <Head
+        title="Poste sua foto"
+        description="Formulário para postar a foto do seu cachorro."
+      />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
         <Input label="Peso" type="number" name="nome" {...peso} />
@@ -60,12 +65,14 @@ const PhotoPost = () => {
         )}
         <Error error={error} />
       </form>
-      {img.preview && (
-        <div
-          className={styles.preview}
-          style={{ backgroundImage: `url('${img.preview}')` }}
-        ></div>
-      )}
+      <div>
+        {img.preview && (
+          <div
+            className={styles.preview}
+            style={{ backgroundImage: `url('${img.preview}')` }}
+          ></div>
+        )}
+      </div>
     </section>
   );
 };
