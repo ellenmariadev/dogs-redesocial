@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { RESET_PASSWORD } from "../../api";
+import { RESET_PASSWORD } from "../../services/api";
 import Error from "../../components/Error";
 import Button from "../../components/Forms/Button/Button";
 import Input from "../../components/Forms/Input/Input";

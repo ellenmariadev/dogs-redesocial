@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { PHOTO_GET } from "../../api";
 import useFetch from "../../hooks/useFetch";
 import Error from "../../components/Error";
 import Loading from "../../components/Loading/Loading";
 import PhotoContent from "./PhotoContent";
 import Head from "../Head";
+import { PHOTO_GET } from "../../services/api";
 
 const Photo = () => {
   const { id } = useParams();
@@ -21,7 +21,10 @@ const Photo = () => {
   if (data)
     return (
       <section className="container mainContainer">
-        <Head title={data.photo.title} description={`Informações do dog ${data.photo.title}`}/>
+        <Head
+          title={data.photo.title}
+          description={`Informações do dog ${data.photo.title}`}
+        />
         <PhotoContent single={true} data={data} />
       </section>
     );

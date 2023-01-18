@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { COMMENT_POST } from "../../../api";
+import { COMMENT_POST } from "../../../services/api";
 import { ReactComponent as Enviar } from "../../../assets/enviar.svg";
 import useFetch from "../../../hooks/useFetch";
 import Error from "../../Error";

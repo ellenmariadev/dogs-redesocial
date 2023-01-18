@@ -3,7 +3,7 @@ import Input from "../../components/Forms/Input/Input";
 import Button from "../../components/Forms/Button/Button";
 import useForm from "../../hooks/useForm";
 import useFetch from "../../hooks/useFetch";
-import { LOST_PASSWORD } from "../../api";
+import { LOST_PASSWORD } from "../../services/api";
 import Error from "../../components/Error";
 import Head from "../../components/Head";
 

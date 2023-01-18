@@ -5,7 +5,7 @@ import ResetPassword from "../Password/ResetPassword";
 import LostPassword from "../Password/LostPassword";
 import { UserContext } from "../../contexts/userContext";
 import styles from "./login.module.css";
-import LoginCreate from "../LoginCreate/LoginCreate";
+import LoginCreate from "../LoginCreate";
 import PageNotFound from "../PageNotFound";
 import Head from "../../components/Head";
 
