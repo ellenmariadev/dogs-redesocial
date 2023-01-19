@@ -7,7 +7,6 @@ import { UserContext } from "../../contexts/userContext";
 import styles from "./login.module.css";
 import LoginCreate from "../LoginCreate";
 import PageNotFound from "../PageNotFound";
-import Head from "../../components/Head";
 
 const Login = () => {
   const { login } = useContext(UserContext);
@@ -16,7 +15,6 @@ const Login = () => {
 
   return (
     <section className={styles.login}>
-      <Head title="Login" description="Formulário de Login" />
       <div className={styles.forms}>
         <Routes>
           <Route path="/" element={<LoginForm />} />

@@ -36,7 +36,7 @@ const ResetPassword = () => {
   }
 
   return (
-    <section>
+    <section className="animeLeft">
       <Head
         title="Alterar Senha"
         description="Formulário para alterar senha."
